@@ -7352,6 +7352,7 @@ body.layout5 .slick-dots li.slick-active button {
 @media (max-width: 416px) {
   .enrol-box {
     padding-left: 0;
+    
   }
 }
 
@@ -15254,6 +15255,16 @@ span.select2-selection.select2-selection--single:focus {
             }
          
         
+        }
+        @media(max-width:400px){
+     
+         .feature-img img{
+          height: 130px!important;
+          width: 130px!important;
+         }
+         .enrol-box{
+          padding-left: 0px!important;
+         }
         }
      
 /*# sourceMappingURL=style.css.map */
