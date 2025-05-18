@@ -16479,3 +16479,230 @@ background-color: var(--vs-secondary-color);
             }
         }
 
+                .pm-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            padding: 0.75rem 1.5rem;
+            background-color: var(--vs-secondary-color)!important;
+            color: white!important;
+            border: none;
+            border-radius: 0.5rem;
+            font-weight: 600;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+
+        .pm-btn:hover {
+            background-color: var(--pm-primary-hover);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 10px var(--pm-shadow);
+        }
+
+        .pm-btn .pm-icon {
+            font-size: 1.25rem;
+        }
+
+        .pm-modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 1000;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .pm-modal-overlay.pm-active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .pm-modal {
+            background-color: white;
+            width: 100%;
+            max-width: 580px;
+            border-radius: 1rem;
+            overflow: hidden;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+            transform: scale(0.9);
+            transition: transform 0.3s ease;
+        }
+
+        .pm-modal-overlay.pm-active .pm-modal {
+            transform: scale(1);
+        }
+
+        .pm-modal-header {
+            padding: 1.5rem;
+            border-bottom: 1px solid var(--pm-border);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .pm-modal-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--pm-text);
+        }
+
+        .pm-close-btn {
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: #6c757d;
+            transition: color 0.3s ease;
+        }
+
+        .pm-close-btn:hover {
+            color: var(--pm-text);
+        }
+
+        .pm-modal-body {
+            padding: 1.5rem;
+        }
+
+        .pm-form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .pm-form-label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            color: var(--pm-text);
+        }
+
+        .pm-form-control {
+            width: 100%;
+            padding: 0.75rem 1rem;
+            font-size: 1rem;
+            border: 1px solid var(--pm-border);
+            border-radius: 0.5rem;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .pm-form-control:focus {
+            outline: none;
+            border-color: var(--pm-primary);
+            box-shadow: 0 0 0 3px rgba(67, 97, 238, 0.15);
+        }
+
+        .pm-form-hint {
+            display: block;
+            margin-top: 0.25rem;
+            font-size: 0.875rem;
+            color: #6c757d;
+        }
+
+        .pm-image-upload {
+            border: 2px dashed var(--pm-border);
+            border-radius: 0.5rem;
+            padding: 2rem;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .pm-image-upload:hover {
+            border-color: var(--pm-primary);
+            background-color: rgba(67, 97, 238, 0.05);
+        }
+
+        .pm-upload-icon {
+            font-size: 2.5rem;
+            color: var(--pm-primary);
+            margin-bottom: 1rem;
+        }
+
+        .pm-upload-text {
+            font-size: 1rem;
+            color: var(--pm-text);
+            margin-bottom: 0.5rem;
+        }
+
+        .pm-upload-hint {
+            font-size: 0.875rem;
+            color: #6c757d;
+        }
+
+        .pm-file-input {
+            display: none;
+        }
+
+        .pm-modal-footer {
+            padding: 1.5rem;
+            border-top: 1px solid var(--pm-border);
+            display: flex;
+            justify-content: flex-end;
+            gap: 1rem;
+        }
+
+        .pm-btn-secondary {
+            background-color: #e9ecef;
+            color: var(--pm-text);
+        }
+
+        .pm-btn-secondary:hover {
+            background-color: #dee2e6;
+        }
+
+        .pm-row {
+            display: flex;
+            margin: 0 -0.75rem;
+            flex-wrap: wrap;
+        }
+
+        .pm-col {
+            padding: 0 0.75rem;
+            flex: 1;
+            min-width: 200px;
+        }
+
+        /* Animation for the modal */
+        @keyframes pm-fadein {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes pm-scalein {
+            from { transform: scale(0.9); }
+            to { transform: scale(1); }
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .pm-modal {
+                max-width: 90%;
+            }
+            
+            .pm-col {
+                flex: 0 0 100%;
+                margin-bottom: 1rem;
+            }
+        }
+
+        /* Button from the requirement */
+       
+
+    
+
+        .tf-button.style-1.w208.modal-btn .icon-plus {
+            margin-right: 0.5rem;
+        }
+ 
+
+
+        
+
